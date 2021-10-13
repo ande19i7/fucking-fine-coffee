@@ -1,0 +1,236 @@
+/**************************************************/
+/*MOBILE STYLES AND GENERAL STYLES (fonts, colors etc.)*/
+/**************************************************/
+
+:root {
+  --bg-color: #363434;
+  --main-color: #e3d9c6;
+  --coffee-color: #843a22;
+  --light-color: #ebe7e0;
+  --blue-color: #7ca2c8;
+  --purple-color: #a68fb6;
+
+  --color1: #421908;
+  --color2: #a85d30;
+  --color3: #ce8b5c;
+  --color4: #ecccb4;
+  --color5: #dce1e7;
+
+  --primary-font: "jubilat", serif;
+
+  --secondary-font: "century-gothic", serif;
+  --main-text-color: #363434;
+
+  --white-space: 1rem;
+}
+
+body {
+  background-color: var(--color4);
+}
+
+h1 {
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: var(--primary-font);
+  text-align: center;
+  color: var(--color1);
+}
+
+h3 {
+  font-family: var(--secondary-font);
+  text-align: center;
+  color: var(--color1);
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-family: var(--secondary-font);
+}
+
+p {
+  font-family: var(--secondary-font);
+}
+
+#splashpage-indhold h1 {
+  color: var(--light-color);
+}
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("imgs/splashbillede-100.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#splashpage-indhold {
+  margin-bottom: 10rem;
+  color: var(--light-color);
+}
+
+#produkter {
+  overflow: hidden;
+}
+
+#produkter img {
+  transition: 0.5s;
+}
+
+#produkter img:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
+#webshop {
+  place-items: center;
+}
+
+#webshop * {
+  grid-area: 1 / 1 / -1 / -1;
+}
+
+#webshop-billede {
+  padding: 0;
+}
+
+#cta-webshop {
+  color: var(--light-color);
+  background: rgba(0, 0, 0, 0.46);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+#anbefalinger div {
+  width: 100%;
+}
+
+#risteriproces {
+  background-color: var(--bg-color);
+}
+
+#risteriproces video {
+  border-radius: 30% 70% 17% 83% / 78% 29% 71% 22%;
+}
+
+#risterproces img {
+  z-index: -1;
+}
+
+#risteriproces h2 {
+  color: var(--light-color);
+}
+
+#risteriproces h3 {
+  color: var(--light-color);
+}
+
+#risteriproces p {
+  color: var(--light-color);
+  z-index: 1;
+}
+
+#anbefalinger {
+  background-color: var(--color5);
+}
+
+#afslutning {
+  background-color: var(--color2);
+}
+
+#afslutning h2 {
+  color: var(--light-color);
+}
+
+#afslutning h3 {
+  color: var(--light-color);
+}
+
+#afslutning a {
+  color: var(--light-color);
+}
+
+footer {
+  background-color: var(--color2);
+  color: var(--light-color);
+  font-size: 0.8rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: -1px;
+}
+
+.skillelinje-top {
+  margin-left: -12px;
+  margin-right: -12px;
+  margin-bottom: -1px;
+}
+
+.skillelinje-bot {
+  margin-left: -12px;
+  margin-right: -12px;
+  margin-top: -1px;
+}
+
+mark {
+  background-color: var(--color4);
+  padding-left: 0px;
+}
+
+.text-highlight {
+  --bg-color-highlight: #ce8b5c;
+  --duration: 1s;
+  --ease: cubic-bezier(0.25, 1, 0.5, 1);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size var(--duration) var(--ease);
+}
+.text-highlight.active {
+  background-size: 100% 100%;
+  background-image: linear-gradient(var(--bg-color-highlight) 0 0);
+}
+
+/**************************************************/
+/* Small devices (landscape phones, 576px and up) */
+/**************************************************/
+@media (min-width: 576px) {
+}
+/* END "sm-" 576px and up */
+
+/**************************************************/
+/* // Medium devices (tablets, 768px and up) */
+/**************************************************/
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+/* END "md-" 768px and up */
+
+/**************************************************/
+/* // Large devices (desktops, 992px and up) */
+/**************************************************/
+@media (min-width: 992px) {
+}
+/* END "lg-" 992px and up */
+
+/**************************************************/
+/* // Extra large devices (large desktops, 1200px and up) */
+/**************************************************/
+@media (min-width: 1200px) {
+}
+/* END "xl-" 1200px and up */
+
+/**************************************************/
+/* // Extra Extra large (XXL) devices (XXL screens, 1400px and up) */
+/**************************************************/
+@media (min-width: 1400px) {
+}
+/* END "xxl-" 1400px and up */
