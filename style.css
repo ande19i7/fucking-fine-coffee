@@ -27,6 +27,34 @@
 body {
   background-color: var(--color4);
 }
+nav {
+  background-color: rgba(126, 126, 126, 0);
+  position: absolute;
+}
+
+.navbar {
+  position: absolute;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--light-color);
+}
+
+.navbar-light .navbar-nav .nav-link.active:hover {
+  color: var(--color5);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--light-color);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--color5);
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(imgs/burgermenu.png);
+}
 
 h1 {
   font-family: var(--secondary-font);
@@ -55,14 +83,42 @@ p {
   font-family: var(--secondary-font);
 }
 
+a {
+  font-family: var(--primary-font);
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
 #splashpage-indhold h1 {
   color: var(--light-color);
+}
+
+#splashpage-indhold img {
+  object-position: 50% 10%;
+}
+
+.navbar {
+  font-family: var(--brodtekst);
+}
+
+.navbar-brand {
+  width: 7.5rem;
+}
+
+#dumknapp {
+  border-radius: 200px;
+  border-color: transparent;
+  color: transparent;
+}
+
+.bg-light {
+  border-color: transparent;
 }
 
 .masthead {
   height: 100vh;
   min-height: 500px;
-  background-image: url("imgs/splashbillede-100.jpg");
+  background-image: url("imgs/splashbillede-100.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -109,6 +165,10 @@ p {
   width: 100%;
 }
 
+#anbefalinger img {
+  clip-path: ellipse(38% 50% at 50% 50%);
+}
+
 #risteriproces {
   background-color: var(--bg-color);
 }
@@ -135,11 +195,19 @@ p {
 }
 
 #anbefalinger {
-  background-color: var(--color5);
+  background-color: var(--color3);
+  color: var(--light-color);
+  background-image: url(imgs/bønnebaggrund.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-#afslutning {
-  background-color: var(--color2);
+#anbefalinger h2 {
+  color: var(--light-color);
+}
+#anbefalinger h3 {
+  color: var(--light-color);
 }
 
 #afslutning h2 {
@@ -152,6 +220,10 @@ p {
 
 #afslutning a {
   color: var(--light-color);
+}
+
+#afslutning {
+  background-color: var(--color2);
 }
 
 footer {
@@ -211,6 +283,14 @@ mark {
   h3 {
     font-size: 1.5rem;
   }
+
+  .opskrift-billede {
+    height: 250px;
+  }
+
+  a {
+    font-size: 1.6rem;
+  }
 }
 /* END "md-" 768px and up */
 
@@ -218,6 +298,17 @@ mark {
 /* // Large devices (desktops, 992px and up) */
 /**************************************************/
 @media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+    min-height: 500px;
+
+    background-size: cover;
+    background-position: 50% 90%;
+  }
+
+  .opskrift-billede {
+    height: 275px;
+  }
 }
 /* END "lg-" 992px and up */
 

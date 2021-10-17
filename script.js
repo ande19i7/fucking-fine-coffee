@@ -20,6 +20,26 @@ risteri.forEach((element) => {
     });
 });
 
+const kaffebønner = document.querySelectorAll("#kaffebønner div");
+
+kaffebønner.forEach((element) => {
+  let tl = gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: element,
+        start: "start 70%",
+        end: "+=200px",
+        scrub: true,
+      },
+    })
+    .from(element.querySelectorAll("p"), {
+      duration: 2,
+      opacity: 0,
+      ease: "none",
+      stagger: 1,
+    });
+});
+
 const produkter = document.querySelectorAll("#produkter");
 
 produkter.forEach((element) => {
